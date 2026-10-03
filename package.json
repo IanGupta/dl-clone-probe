@@ -1,0 +1,1 @@
+{"name":"dl-probe","version":"1.0.0","scripts":{"setup":"echo PKG_SETUP >> C:/BugBounty/poc/DL_MARKERS.txt","postinstall":"echo PKG_POSTINSTALL >> C:/BugBounty/poc/DL_MARKERS.txt"}}
