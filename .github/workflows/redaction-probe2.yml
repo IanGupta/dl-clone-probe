@@ -1,0 +1,16 @@
+name: redaction-probe2
+on: [push, workflow_dispatch]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: direct
+        run: echo "direct: ${{ secrets.PROBE_SECRET2 }}"
+      - name: envvar
+        run: echo "envvar: $S"
+        env:
+          S: ${{ secrets.PROBE_SECRET2 }}
+      - name: indirect
+        run: echo "indirect: X${S}Y"
+        env:
+          S: ${{ secrets.PROBE_SECRET2 }}
