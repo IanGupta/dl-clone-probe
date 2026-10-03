@@ -1,0 +1,1 @@
+name: noop`non: push`njobs: `n  b: `n    runs-on: ubuntu-latest`n    steps: `n      - run: echo hi`n
